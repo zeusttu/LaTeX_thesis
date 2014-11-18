@@ -1,0 +1,39 @@
+\documentclass[multiauthor,multisupervisor,todo]{thesis}
+
+\usepackage{lipsum}
+
+\institute{(optional) University of whereveryoulive}
+\author{Zeust the Unoobian \and Author 2 \and Author 3}
+\reporttype{(optional) What kind of report this is}
+\title{Title}
+\subtitle{Subtitle of the report}
+\supervisor{(optional) \and Supervisor 1 \and Supervisor 2 \and Supervisor 3 \and Supervisor 4}
+\organisation{(optional) Internship providers inc.}
+\coverimg{cover_image}
+\bottomleftimg{corner_image}
+\bottomrightimg{corner_image}
+% Note that \startdate and \finishdate replace \date if they are specified
+% If they are not specified, whatever is specified with \date will be printed
+\startdate{Some time ago}
+\finishdate{Now}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\chapter{Hello world}
+\todo[inline]{Write something useful}
+\lipsum[1-3]
+
+\section{Hello part of the world}
+\lipsum[4-20]
+
+\unnumberedchapter{Hello universe}
+This chapter is not numbered but still picked up by the table of contents and the mechanism putting the current chapter title at the top of each page (except the first page of a chapter).
+Note that this is done with a special {\textbackslash}unnumberedchapter command instead of the standard {\textbackslash}chapter* command.
+
+\lipsum[21-30]
+
+\end{document}
+
